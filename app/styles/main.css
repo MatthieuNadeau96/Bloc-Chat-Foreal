@@ -6,6 +6,7 @@
     height: 100%;
     background-color: lightblue;
     z-index:1;
+    border-right: 3px solid black;
 }
 .sidebar-header {
     padding-left: 10px;
@@ -45,10 +46,9 @@
 }
 .messages-body .username {
     font-weight: bold;
-    float: left;
 }
 .messages-body .timestamp {
-    text-align: right;
+    float: right;
     padding-right: 200px;
 }
 .messages-body .username .timestamp {
@@ -66,3 +66,4 @@
 .message-box {
     width: 800px;
 }
+/* LOGIN */

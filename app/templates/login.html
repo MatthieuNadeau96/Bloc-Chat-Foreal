@@ -1,0 +1,25 @@
+<div style="
+            position: absolute;
+            left: 40%;
+            top: 30%;
+            height: 150px;
+            width: 300px;
+            background-color: lightblue;
+            text-align: center;
+            border: 3px solid black;
+            border-radius: 20px;
+            font-family: arial;
+            z-index: 10;
+            " 
+      class="login-body" id="login-body">
+    <div class="modal-header">
+        <h3 class="login-title">Login</h3>
+    </div>
+    <div class="login-body">
+        <h5 class="login-prompt">Enter a username</h5>
+        <input type="text" name="input" ng-model="login.username" required>
+    </div>
+    <div class="login-footer">
+        <button class="btn-new" type="button" ng-click="login.createUsername()">Create user</button>
+    </div>
+</div>
