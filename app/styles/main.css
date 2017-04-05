@@ -1,25 +1,68 @@
-.new-room-button {
-    border: 1px solid black;
-    padding: 1rem;
-    margin-left: 0.5rem;
+.sidebar {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 20%;
+    height: 100%;
+    background-color: lightblue;
+    z-index:1;
 }
-.new-room-button:hover {
+.sidebar-header {
+    padding-left: 10px;
+    margin-bottom: 5px;
+    display: table;
+    width: 100%;
+    box-sizing: border-box;
+}
+.sidebar-header .new-room {
+    margin: 0 5px;
+}
+.sidebar-title {
+    display: inline-block;
+    padding-right: 15px;
+}
+.sidebar .room-name:hover {
     cursor: pointer;
 }
-
-.room-nav {
-     background-color: lightgray;
-     position: fixed;
-     width: 25%;
-     top: 0px;
-     left: 0px;
-     height: 100%;
+.sidebar .room-name {
+    padding-left: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
- 
-.room-name {
-     margin-top: 2rem;
+/* MESSAGES */
+.messages {
+    position: fixed;
+    top: 0px;
+    left: 300px;
+    width: 80%;
+    height: 100%;
+    background-color: white;
+    z-index: 1;
+    overflow:scroll;
 }
- 
-.room-name:hover {
-     cursor: pointer;
+.messages-body {
+    padding-right: 50px;
+}
+.messages-body .username {
+    font-weight: bold;
+    float: left;
+}
+.messages-body .timestamp {
+    text-align: right;
+    padding-right: 200px;
+}
+.messages-body .username .timestamp {
+    display: inline-block;
+}
+.messages-body .user-messages {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.messages-field {
+    bottom: 0;
+    padding-bottom: 5px;
+    position: fixed;
+}
+.message-box {
+    width: 800px;
 }
